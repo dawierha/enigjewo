@@ -32,6 +32,7 @@ import canada from "url:maps/canada.geojson";
 import argentina from "url:maps/argentina.geojson";
 import mexico from "url:maps/mexico.geojson";
 import sweden from "url:maps/sweden.geojson";
+import stockholm from "url:maps/stockholm.geojson";
 import biggestCities from "url:maps/biggest-cities.geojson";
 import inferno from "url:maps/inferno.geojson";
 
@@ -68,6 +69,7 @@ export const maps = {
     usa: {label: "🇺🇸 USA", data: usa},
     // --- misc
     unesco: {label: "🗿 Unesco (World Heritage List)", data: unesco},
+    stockholm: {label: "🏙️ Stockholm city", data: stockholm},
     biggestCities: {
         label: "🏙 Biggest Cities (40 biggest cities of the world)",
         data: biggestCities,
@@ -115,7 +117,10 @@ export const groups = {
             "usa",
         ],
     },
-    misc: {label: "Misc.", maps: ["unesco", "biggestCities", "inferno"]},
+    misc: {
+        label: "Misc.",
+        maps: ["unesco", "stockholm", "biggestCities", "inferno"],
+    },
 };
 
 const cache = new Map();
