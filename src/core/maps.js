@@ -36,6 +36,7 @@ import stockholm from "url:maps/stockholm.geojson";
 import pitea from "url:maps/pitea.geojson";
 import biggestCities from "url:maps/biggest-cities.geojson";
 import inferno from "url:maps/inferno.geojson";
+import world_cities from "url:maps/world_cities.geojson";
 
 export const maps = {
     // --- areas
@@ -69,6 +70,11 @@ export const maps = {
     uk: {label: "🇬🇧 United Kingdom", data: uk},
     usa: {label: "🇺🇸 USA", data: usa},
     // --- cities
+    world_cities: {
+        //Credit: https://github.com/drei01/geojson-world-cities
+        label: "🏙️ Urban - 37 320 cities from around the world",
+        data: world_cities,
+    },
     stockholm: {label: "🏙️ Stockholm urban", data: stockholm},
     pitea: {label: "🏙️ Piteå", data: pitea},
     biggestCities: {
@@ -122,7 +128,13 @@ export const groups = {
     },
     cities: {
         label: "Cities",
-        maps: ["biggestCities", "inferno", "stockholm", "pitea"],
+        maps: [
+            "biggestCities",
+            "inferno",
+            "stockholm",
+            "pitea",
+            "world_cities",
+        ],
     },
     misc: {
         label: "Misc.",
