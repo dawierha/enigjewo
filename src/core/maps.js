@@ -67,9 +67,8 @@ export const maps = {
     sweden: {label: "🇸🇪 Sweden", data: sweden},
     uk: {label: "🇬🇧 United Kingdom", data: uk},
     usa: {label: "🇺🇸 USA", data: usa},
-    // --- misc
-    unesco: {label: "🗿 Unesco (World Heritage List)", data: unesco},
-    stockholm: {label: "🏙️ Stockholm city", data: stockholm},
+    // --- cities
+    stockholm: {label: "🏙️ Stockholm urban", data: stockholm},
     biggestCities: {
         label: "🏙 Biggest Cities (40 biggest cities of the world)",
         data: biggestCities,
@@ -79,6 +78,8 @@ export const maps = {
             "🔥 Inferno - two complex cities - Santa Cruz de la Sierra (Bolivia) & Touba (Senegal)",
         data: inferno,
     },
+    // --- misc
+    unesco: {label: "🗿 Unesco (World Heritage List)", data: unesco},
 };
 
 export const groups = {
@@ -117,9 +118,13 @@ export const groups = {
             "usa",
         ],
     },
+    cities: {
+        label: "Cities",
+        maps: ["biggestCities", "inferno", "stockholm"],
+    },
     misc: {
         label: "Misc.",
-        maps: ["unesco", "stockholm", "biggestCities", "inferno"],
+        maps: ["unesco"],
     },
 };
 
