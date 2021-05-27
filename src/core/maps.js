@@ -33,6 +33,7 @@ import argentina from "url:maps/argentina.geojson";
 import mexico from "url:maps/mexico.geojson";
 import sweden from "url:maps/sweden.geojson";
 import stockholm from "url:maps/stockholm.geojson";
+import pitea from "url:maps/pitea.geojson";
 import biggestCities from "url:maps/biggest-cities.geojson";
 import inferno from "url:maps/inferno.geojson";
 
@@ -69,6 +70,7 @@ export const maps = {
     usa: {label: "🇺🇸 USA", data: usa},
     // --- cities
     stockholm: {label: "🏙️ Stockholm urban", data: stockholm},
+    pitea: {label: "🏙️ Piteå", data: pitea},
     biggestCities: {
         label: "🏙 Biggest Cities (40 biggest cities of the world)",
         data: biggestCities,
@@ -120,7 +122,7 @@ export const groups = {
     },
     cities: {
         label: "Cities",
-        maps: ["biggestCities", "inferno", "stockholm"],
+        maps: ["biggestCities", "inferno", "stockholm", "pitea"],
     },
     misc: {
         label: "Misc.",
